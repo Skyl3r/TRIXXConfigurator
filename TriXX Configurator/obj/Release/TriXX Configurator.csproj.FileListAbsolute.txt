@@ -6,3 +6,4 @@ C:\LL\TriXX Configurator\TriXX Configurator\obj\Release\TriXX_Configurator.Prope
 C:\LL\TriXX Configurator\TriXX Configurator\obj\Release\TriXX Configurator.csproj.GenerateResource.Cache
 C:\LL\TriXX Configurator\TriXX Configurator\obj\Release\TriXX Configurator.exe
 C:\LL\TriXX Configurator\TriXX Configurator\obj\Release\TriXX Configurator.pdb
+C:\LL\TriXX Configurator\TriXX Configurator\obj\Release\TriXX Configurator.csprojResolveAssemblyReference.cache

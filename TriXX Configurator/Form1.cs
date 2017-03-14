@@ -50,6 +50,8 @@ namespace TriXX_Configurator
 
 		public void updateFields()
 		{
+			Button_Load.Enabled = false;
+			Panel_Values.Enabled = true;
 			TextBox_MaxOffset.Text = trixxConfigurator.values["VDDCOffsetMax"].ToString();
 			TextBox_MinOffset.Text = trixxConfigurator.values["VDDCOffsetMin"].ToString();
 			TextBox_MaxGPUClock.Text = trixxConfigurator.values["GPUClockSliderRangeMax"].ToString();
@@ -91,6 +93,54 @@ namespace TriXX_Configurator
 		private void Button_Save_Click(object sender, EventArgs e)
 		{
 			trixxConfigurator.saveTrixx(installDirectory);
+		}
+
+		private void TextBox_MaxOffset_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+					e.Handled = true;
+			}
+		}
+
+		private void TextBox_MinOffset_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
+
+		private void TextBox_MaxMemClock_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
+
+		private void TextBox_MaxGPUClock_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
+
+		private void TextBox_MVVDCDisable_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
+
+		private void TextBox_VDDCIDisable_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
 		}
 	}
 }

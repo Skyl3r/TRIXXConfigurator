@@ -7,12 +7,3 @@ c:\LL\TriXX Configurator\TriXX Configurator\obj\Debug\TriXX Configurator.csproj.
 c:\LL\TriXX Configurator\TriXX Configurator\obj\Debug\TriXX Configurator.exe
 c:\LL\TriXX Configurator\TriXX Configurator\obj\Debug\TriXX Configurator.pdb
 c:\LL\TriXX Configurator\TriXX Configurator\obj\Debug\TriXX_Configurator.TRIXXConf.resources
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\bin\Debug\TriXX Configurator.exe.config
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\obj\Debug\TriXX Configurator.exe
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\obj\Debug\TriXX Configurator.pdb
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\bin\Debug\TriXX Configurator.exe
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\bin\Debug\TriXX Configurator.pdb
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\obj\Debug\TriXX Configurator.csprojResolveAssemblyReference.cache
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\obj\Debug\TriXX_Configurator.TRIXXConf.resources
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\obj\Debug\TriXX_Configurator.Properties.Resources.resources
-C:\Users\KevinP\Documents\GitHub\TRIXXConfigurator\TriXX Configurator\obj\Debug\TriXX Configurator.csproj.GenerateResource.Cache

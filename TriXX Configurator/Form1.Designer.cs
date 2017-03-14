@@ -34,7 +34,7 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.Button_Load = new System.Windows.Forms.Button();
 			this.Button_BrowseDialog = new System.Windows.Forms.Button();
-			this.panel2 = new System.Windows.Forms.Panel();
+			this.Panel_Values = new System.Windows.Forms.Panel();
 			this.Label_VDDCOffsetMax = new System.Windows.Forms.Label();
 			this.Label_VDDCOffsetMin = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
+			this.Panel_Values.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -106,25 +106,26 @@
 			this.Button_BrowseDialog.UseVisualStyleBackColor = true;
 			this.Button_BrowseDialog.Click += new System.EventHandler(this.Button_BrowseDialog_Click);
 			// 
-			// panel2
+			// Panel_Values
 			// 
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel2.Controls.Add(this.TextBox_VDDCIDisable);
-			this.panel2.Controls.Add(this.TextBox_MVVDCDisable);
-			this.panel2.Controls.Add(this.TextBox_MaxGPUClock);
-			this.panel2.Controls.Add(this.TextBox_MaxMemClock);
-			this.panel2.Controls.Add(this.TextBox_MinOffset);
-			this.panel2.Controls.Add(this.TextBox_MaxOffset);
-			this.panel2.Controls.Add(this.label6);
-			this.panel2.Controls.Add(this.label5);
-			this.panel2.Controls.Add(this.label4);
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.Label_VDDCOffsetMin);
-			this.panel2.Controls.Add(this.Label_VDDCOffsetMax);
-			this.panel2.Location = new System.Drawing.Point(7, 188);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(341, 171);
-			this.panel2.TabIndex = 3;
+			this.Panel_Values.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.Panel_Values.Controls.Add(this.TextBox_VDDCIDisable);
+			this.Panel_Values.Controls.Add(this.TextBox_MVVDCDisable);
+			this.Panel_Values.Controls.Add(this.TextBox_MaxGPUClock);
+			this.Panel_Values.Controls.Add(this.TextBox_MaxMemClock);
+			this.Panel_Values.Controls.Add(this.TextBox_MinOffset);
+			this.Panel_Values.Controls.Add(this.TextBox_MaxOffset);
+			this.Panel_Values.Controls.Add(this.label6);
+			this.Panel_Values.Controls.Add(this.label5);
+			this.Panel_Values.Controls.Add(this.label4);
+			this.Panel_Values.Controls.Add(this.label2);
+			this.Panel_Values.Controls.Add(this.Label_VDDCOffsetMin);
+			this.Panel_Values.Controls.Add(this.Label_VDDCOffsetMax);
+			this.Panel_Values.Enabled = false;
+			this.Panel_Values.Location = new System.Drawing.Point(7, 188);
+			this.Panel_Values.Name = "Panel_Values";
+			this.Panel_Values.Size = new System.Drawing.Size(341, 171);
+			this.Panel_Values.TabIndex = 3;
 			// 
 			// Label_VDDCOffsetMax
 			// 
@@ -197,6 +198,7 @@
 			this.TextBox_MaxOffset.Size = new System.Drawing.Size(75, 20);
 			this.TextBox_MaxOffset.TabIndex = 7;
 			this.TextBox_MaxOffset.TextChanged += new System.EventHandler(this.TextBox_MaxOffset_TextChanged);
+			this.TextBox_MaxOffset.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_MaxOffset_KeyPress);
 			// 
 			// TextBox_MinOffset
 			// 
@@ -205,6 +207,7 @@
 			this.TextBox_MinOffset.Size = new System.Drawing.Size(75, 20);
 			this.TextBox_MinOffset.TabIndex = 8;
 			this.TextBox_MinOffset.TextChanged += new System.EventHandler(this.TextBox_MinOffset_TextChanged);
+			this.TextBox_MinOffset.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_MinOffset_KeyPress);
 			// 
 			// TextBox_MaxMemClock
 			// 
@@ -213,6 +216,7 @@
 			this.TextBox_MaxMemClock.Size = new System.Drawing.Size(75, 20);
 			this.TextBox_MaxMemClock.TabIndex = 9;
 			this.TextBox_MaxMemClock.TextChanged += new System.EventHandler(this.TextBox_MaxMemClock_TextChanged);
+			this.TextBox_MaxMemClock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_MaxMemClock_KeyPress);
 			// 
 			// TextBox_MaxGPUClock
 			// 
@@ -221,6 +225,7 @@
 			this.TextBox_MaxGPUClock.Size = new System.Drawing.Size(75, 20);
 			this.TextBox_MaxGPUClock.TabIndex = 11;
 			this.TextBox_MaxGPUClock.TextChanged += new System.EventHandler(this.TextBox_MaxGPUClock_TextChanged);
+			this.TextBox_MaxGPUClock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_MaxGPUClock_KeyPress);
 			// 
 			// TextBox_MVVDCDisable
 			// 
@@ -229,6 +234,7 @@
 			this.TextBox_MVVDCDisable.Size = new System.Drawing.Size(75, 20);
 			this.TextBox_MVVDCDisable.TabIndex = 12;
 			this.TextBox_MVVDCDisable.TextChanged += new System.EventHandler(this.TextBox_MVVDCDisable_TextChanged);
+			this.TextBox_MVVDCDisable.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_MVVDCDisable_KeyPress);
 			// 
 			// TextBox_VDDCIDisable
 			// 
@@ -237,6 +243,7 @@
 			this.TextBox_VDDCIDisable.Size = new System.Drawing.Size(75, 20);
 			this.TextBox_VDDCIDisable.TabIndex = 13;
 			this.TextBox_VDDCIDisable.TextChanged += new System.EventHandler(this.TextBox_VDDCIDisable_TextChanged);
+			this.TextBox_VDDCIDisable.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_VDDCIDisable_KeyPress);
 			// 
 			// panel3
 			// 
@@ -278,15 +285,15 @@
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.Button_Save);
-			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.Panel_Values);
 			this.Controls.Add(this.panel1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "TRIXXConf";
 			this.Text = "TRIXX Configurator";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
+			this.Panel_Values.ResumeLayout(false);
+			this.Panel_Values.PerformLayout();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.ResumeLayout(false);
@@ -301,7 +308,7 @@
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button Button_BrowseDialog;
 		private System.Windows.Forms.Button Button_Load;
-		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel Panel_Values;
 		private System.Windows.Forms.Label Label_VDDCOffsetMax;
 		private System.Windows.Forms.Label Label_VDDCOffsetMin;
 		private System.Windows.Forms.Label label2;
